@@ -1,0 +1,80 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Light background for contrast */
+    color: #333;
+}
+
+/* Main Login Container */
+.login {
+    max-width: 400px; /* Limit width for better readability */
+    margin: 100px auto; /* Center the form vertically and horizontally */
+    padding: 20px;
+    background: #ffffff; /* White background for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center; /* Center text */
+}
+
+/* Heading Style */
+.component-heading {
+    font-size: 28px; /* Size of the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #007BFF; /* Bootstrap primary color */
+}
+
+/* Form Styling */
+.login-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15px; /* Space between inputs */
+}
+
+/* Input Fields Styling */
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    padding: 12px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Soft shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background-color: #007BFF; /* Button color */
+    color: #ffffff; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* Remove border */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login {
+        padding: 15px; /* Adjust padding on smaller screens */
+        margin: 50px auto; /* Adjust margin for smaller screens */
+    }
+    
+    .component-heading {
+        font-size: 24px; /* Smaller heading on mobile */
+    }
+}

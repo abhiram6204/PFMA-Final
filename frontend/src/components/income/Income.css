@@ -1,0 +1,213 @@
+/* Income.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .income-component {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between;
+    padding: 20px;
+    gap: 30px;
+    box-sizing: border-box;
+    max-width: 10000%; /* Ensure the layout covers more of the screen width */
+    margin: 0 auto;
+  }
+  
+  .component-income-heading {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Form and List Container should take up more width */
+  .income-form-container,
+  .income-list-container {
+    flex-basis: 45%; /* Use 45% width for each container */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Make input fields, textareas, and buttons responsive and properly spaced */
+  .income-form input,
+  .income-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-date, .input-amount, .input-source, .textarea-description {
+    font-size: 1rem;
+  }
+  
+  .submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Income List Container */
+  .income-list-container {
+    flex-grow: 1;
+  }
+  
+  #incomeTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  #incomeTable th, #incomeTable td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  #incomeTable th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  #incomeTable td {
+    background-color: #f9f9f9;
+  }
+  
+  #incomeTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .total-income {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Filter Section */
+  .filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .filter-select,
+  .filter-date,
+  .filter-amount {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .filter-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Edit Form Modal */
+  .edit-income-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 9999;
+  }
+  
+  .update-income-form input,
+  .update-income-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .edit-submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Action Buttons */
+  .btn-update,
+  .btn-delete {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .btn-update i,
+  .btn-delete i {
+    font-size: 1.2rem;
+  }
+  
+  .btn-update i {
+    color: #007bff;
+  }
+  
+  .btn-update:hover i {
+    color: #0056b3;
+  }
+  
+  .btn-delete i {
+    color: #dc3545;
+  }
+  
+  .btn-delete:hover i {
+    color: #c82333;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1200px) {
+    .income-component {
+      flex-direction: column;
+    }
+  
+    .income-form-container,
+    .income-list-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .filter-container {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,179 @@
+/* Budget.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.income-component {
+    display: flex;
+    flex-direction: column; /* Change to column for vertical alignment */
+    padding: 20px;
+    gap: 30px; /* Space between elements */
+    box-sizing: border-box;
+}
+
+.component-income,
+.component-heading {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Income Form Styles */
+.income {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.income-form input {
+    width: calc(100% - 20px); /* Full width with padding adjustment */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.income-form input[type="submit"] {
+    background-color: #28a745; /* Green submit button */
+    color: white;
+    cursor: pointer;
+}
+
+.income-form input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Filter Section Styles */
+.filter-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section h2 {
+    font-size: 1.5rem;
+}
+
+.filter-section label {
+    display: block; /* Stack labels above inputs */
+}
+
+.filter-section input,
+.filter-section select,
+.filter-section button {
+    width: calc(100% - 20px); /* Full width with padding adjustment */
+    padding: 10px;
+    margin-top: 5px; 
+}
+
+/* Button Styles */
+.filter-section button {
+    background-color: #007bff; /* Blue button for applying filters */
+    color: white;
+}
+
+.filter-section button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Income List Styles */
+.income-list {
+   margin-top :20px; /* Add space above the income list */
+}
+
+table {
+   width :100%;
+   border-collapse :collapse; /* Remove space between borders */
+}
+
+th,
+td {
+   padding :12px;
+   border :1px solid #ddd; /* Light grey border for table cells */
+}
+
+th {
+   background-color :#007bff; /* Blue header background */
+   color :white; /* White text for header */
+}
+
+td {
+   background-color :#f9f9f9; /* Light grey for table rows */
+}
+
+tr:hover td {
+   background-color :#f1f1f1; /* Highlight row on hover */
+}
+
+/* Edit Form Modal Styles */
+.income-stats {
+   position :fixed; 
+   top :50%; 
+   left :50%; 
+   transform :translate(-50%, -50%);
+   background-color:white; 
+   padding :20px; 
+   width :40%; 
+   box-shadow :0 0 20px rgba(0,0,0,0.2); 
+   border-radius :10px; 
+   z-index :9999; 
+}
+
+/* Update Form Styles */
+.update-income-form input {
+   width :calc(100% -20px); 
+   padding :10px; 
+   margin-bottom :10px; 
+   border :1px solid #ccc; 
+   border-radius :5px; 
+}
+
+/* Action Buttons Styles */
+.update,
+.delete {
+   border:none; 
+   background:none; 
+   cursor:pointer; 
+}
+
+.update i,
+.delete i {
+   font-size :1.2rem; 
+}
+
+.update i { 
+   color:#007bff; 
+}
+
+.update:hover i { 
+   color:#0056b3; 
+}
+
+.delete i { 
+   color:#dc3545; 
+}
+
+.delete:hover i { 
+   color:#c82333; 
+}
+
+/* Responsive Adjustments */
+@media (max-width :1200px) { 
+   .income-component { 
+      flex-direction :column; 
+      align-items:center; /* Center items horizontally on small screens */  
+   }
+
+   .income,
+   .filter-section { 
+      width :100%; 
+      margin-bottom :20px; 
+      text-align:center; /* Center text in smaller screens */  
+   }
+}

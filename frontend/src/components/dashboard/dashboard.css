@@ -1,0 +1,51 @@
+/* dashboard.css */
+.dashboard {
+  padding: 20px;
+  font-family: 'Arial, sans-serif';
+  background-color: #f0f0f0;
+  min-height: 100vh;
+}
+
+.dashboard h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #666;
+}
+
+.pieChartContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

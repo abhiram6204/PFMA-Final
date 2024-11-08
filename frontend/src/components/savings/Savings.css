@@ -1,0 +1,82 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Main container for the savings component */
+.savings-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.savings-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading styles */
+.savings-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-align: center;
+}
+
+/* Savings details styling */
+.savings-details {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Paragraph styling for savings */
+.savings-details p {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Error message styling */
+.error {
+    color: #dc3545; /* Red for error messages */
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Loading message styling */
+.loading {
+    text-align: center;
+    font-size: 20px;
+    color: #007BFF; /* Blue for loading */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .savings-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .savings-container h1 {
+        font-size: 24px;
+    }
+
+    .savings-details p {
+        font-size: 18px;
+    }
+}

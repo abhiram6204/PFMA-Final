@@ -1,0 +1,184 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Main container for the income component */
+.income-component {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.income-component:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading styles */
+.component-income,
+.component-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-align: center;
+}
+
+/* Form styles */
+.income-form, .update-income-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* space between form elements */
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"],
+textarea {
+    padding: 12px;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Income list section */
+.income-list {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Button styling for actions */
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+button.update {
+    color: #28a745; /* Green for update */
+}
+
+button.update:hover {
+    color: #218838;
+}
+
+button.delete {
+    color: #dc3545; /* Red for delete */
+}
+
+button.delete:hover {
+    color: #c82333;
+}
+
+/* Filter container styles */
+.filter-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#source-filter {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #cccccc;
+    transition: border-color 0.3s;
+}
+
+#source-filter:focus {
+    border-color: #007BFF;
+}
+
+/* Total income styling */
+h3 {
+    margin-top: 20px;
+    color: #007BFF;
+    text-align: center;
+}
+
+/* Edit income styles */
+.edit-income {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .income-component {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .component-income,
+    .component-heading {
+        font-size: 24px;
+    }
+
+    input[type="submit"],
+    input[type="date"],
+    input[type="number"],
+    input[type="text"],
+    textarea {
+        font-size: 14px;
+    }
+}
